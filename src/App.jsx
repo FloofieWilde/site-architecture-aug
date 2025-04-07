@@ -4,6 +4,7 @@ import Overlay from './components/overlay/Overlay'
 import Fresque from './pages/Fresque'
 import BrowserSizedContainer from './components/containers/BrowserSizedContainer'
 import Activities from './pages/Activities'
+import Context from './pages/Context'
 
 function App () {
   return (
@@ -12,6 +13,7 @@ function App () {
       <BrowserSizedContainer>
         <Routes>
           <Route path="/" element={<Home/> } />
+          <Route path="/context" element={<Context /> } />
           <Route path="/activities" element={<Activities/> } />
           <Route path="/fresque" element={<Fresque/> } />
         </Routes>

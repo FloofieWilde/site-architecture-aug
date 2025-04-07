@@ -6,7 +6,7 @@ const Overlay = () => {
   return (
     <Navbar>
         <NavLink to="">Logo</NavLink>
-        <NavLink>Contextualisation</NavLink>
+        <NavLink to="/context">Contextualisation</NavLink>
         <NavLink to='activities'>Activités</NavLink>
         <NavLink to='fresque'>Fresque</NavLink>
     </Navbar>
@@ -14,9 +14,6 @@ const Overlay = () => {
 }
 
 const Navbar = styled.div`
-    position: sticky;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: var(--background-primary);
 
