@@ -9,11 +9,7 @@ body {
   height:100%;
   width: 100%;
 
-  cursor: url('./shared/assets/imgs/Cursor.png'), auto !important;
-}
-
-* {
-  cursor: url('./shared/assets/imgs/Cursor.png'), auto !important;
+  cursor: url("./shared/assets/imgs/Cursor.png"), auto !important;
 }
 
 html {
