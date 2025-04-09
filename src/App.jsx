@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import Overlay from './components/overlay/Overlay'
+import Navbar from './components/Navbar/Navbar'
 import Fresque from './pages/Fresque'
 import BrowserSizedContainer from './components/containers/BrowserSizedContainer'
 import Activities from './pages/Activities'
@@ -9,7 +9,7 @@ import Context from './pages/Context'
 function App () {
   return (
     <BrowserRouter>
-      <Overlay/>
+      <Navbar/>
       <BrowserSizedContainer>
         <Routes>
           <Route path="/" element={<Home/> } />

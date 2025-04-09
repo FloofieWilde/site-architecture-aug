@@ -12,8 +12,9 @@ const ContainerStyle = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--background-color);
+  background-color: var(--background-primary);
   box-sizing: border-box;
+  overflow: hidden;
 `
 
 

@@ -1,41 +1,44 @@
 import React from 'react'
-import BrowserSizedContainer from '../components/containers/BrowserSizedContainer'
-import FresqueContainer from '../components/containers/FresqueContainer'
-import FlexRow from '../components/containers/FlexRow';
-import { FlexColumn } from '../components/containers/FlexColumn';
+import styled from 'styled-components'
 
 const Fresque = () => {
-
-  const arrayOfImages = [];
-
-  for (let i = 0; i < 6; i++) {
-    const imageRow = [];
-    for (let j = 0; j < 5; j++) {
-      imageRow.push(`/fresque-imgs/${i+1}-${j+1}.png`);
-    }
-    arrayOfImages.push(imageRow);
-  }
-
   return (
-      <FresqueContainer>
-          {
-            arrayOfImages.map((row, rowIndex) => (
-                <FlexRow key={rowIndex}>
-                {row.map((image, colIndex) => (
-                  <img 
-                    key={colIndex} 
-                    src={image}
-                    style={{
-                      width: '20%',
-                    }}
-                    alt={`Fresque ${rowIndex+1}-${colIndex+1}`}
-                  />
-                ))}
-                </FlexRow>
-              ))
-            }
-      </FresqueContainer>
-  )
+        <FresqueContainer>
+            <img src="./fresque_base.png" alt="fresque"/>
+            <img className='og' src="./fresque_crop.png" alt="fresque"/>
+        </FresqueContainer>
+    )
 }
+
+const FresqueContainer = styled.div`
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    img {
+        @media (min-aspect-ratio: 2/3) {
+            max-height: 100%;           
+        }
+        
+        object-fit: contain;
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+
+        &.og {
+            &:hover {
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+    }
+    /* &:hover {
+        background-image: url('./fresque_base.png');
+    } */
+`
 
 export default Fresque

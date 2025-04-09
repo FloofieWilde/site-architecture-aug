@@ -1,14 +1,65 @@
+// :root {
+// 	--background-color: #fec7c7;
+//     --background-primary: #db9327;
+//     --background-accent: #694610;
+// 	--text-color: #333333;
+// 	--primary-color: #007bff;
+//     --secondary-color: #6c757d;
+//     --success-color: #28a745;
+//     --danger-color: #dc3545;
+//     --warning-color: #ffc107;
+//     --info-color: #17a2b8;
+//     --light-color: #f8f9fa;
+//     --dark-color: #343a40;
+//     --white-color: #f6f6f6;
+// }
+
 :root {
-	--background-color: #f0f0f0;
-    --background-primary: #007bff;
-	--text-color: #333333;
-	--primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --success-color: #28a745;
-    --danger-color: #dc3545;
-    --warning-color: #ffc107;
-    --info-color: #17a2b8;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --white-color: #ffffff;
+    --neutral-0: #FFFFFF;
+    --neutral-50: #F9F9F9;
+    --neutral-100: #F2F2F2;
+    --neutral-200: #E6E6E6;
+    --neutral-300: #D9D9D9;
+    --neutral-400: #CCCCCC;
+    --neutral-500: #BFBFBF;
+    --neutral-600: #A6A6A6;
+    --neutral-700: #8C8C8C;
+    --neutral-800: #737373;
+    --neutral-900: #333333;
+
+    --accent: #db9327;
+    --accent-bis: #694610;
+    --neutral: #FFA500;
+
+    --success: #32CD32;
+    --warning: #FFD700;
+    --error: #FF4500;
+
+    --border-extreme-reverse: var(--neutral-0);
+    --border-extreme: var(--neutral-900);
+    --border-strong: var(--neutral-800);
+    --border-moderate: var(--neutral-700);
+    --border-weak: var(--neutral-600);
+    --border-muted: var(--neutral-400);
+    --border-CDT: var(--CDT);
+    --border-prot-urine: var(--protein-urine);
+    --border-HB1C: var(--HB1C);
+    --border-P6IT: var(--P6IT);
+    --border-accent: var(--accent);
+
+    --background-primary-reverse: var(--neutral-0);
+    --background-primary: #FFFAF0;
+    --background-secondary: #FFF5EB;
+    --background-tertiary: var(--neutral-50);
+    --background-muted: #FFF0E0;
+    --background-soft: var(--neutral-50);
+    --background-accent: var(--accent);
+    --background-accent-bis: var(--accent-bis);
+
+    --content-primary: var(--neutral-900);
+    --content-primary-reverse: var(--neutral-0);
+    --content-secondary: var(--neutral-800);
+    --content-secondary-reverse: var(--neutral-200);
+    --content-tertiary: var(--neutral-700);
+    --content-tertiary-reverse: var(--neutral-300);
 }
