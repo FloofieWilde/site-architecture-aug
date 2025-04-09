@@ -11,7 +11,7 @@ const Fresque = () => {
   for (let i = 0; i < 6; i++) {
     const imageRow = [];
     for (let j = 0; j < 5; j++) {
-      imageRow.push(`/fresque/${i+1}-${j+1}.png`);
+      imageRow.push(`/fresque-imgs/${i+1}-${j+1}.png`);
     }
     arrayOfImages.push(imageRow);
   }
