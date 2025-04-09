@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const Fresque = () => {
   return (
         <FresqueContainer>
-            <img src="./fresque_base.png" alt="fresque"/>
-            <img className='og' src="./fresque_crop.png" alt="fresque"/>
+            <img src="./Fresque_base.png" alt="fresque"/>
+            <img className='og' src="./Fresque_crop.png" alt="fresque"/>
         </FresqueContainer>
     )
 }

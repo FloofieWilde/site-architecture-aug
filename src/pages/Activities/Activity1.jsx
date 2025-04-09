@@ -58,7 +58,6 @@ const ActivityPanel = styled.div`
 
     .panelTitle {
       position: absolute;
-
     }
 
     .panelContent {

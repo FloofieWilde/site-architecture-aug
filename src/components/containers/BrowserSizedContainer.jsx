@@ -16,6 +16,7 @@ const ContainerStyle = styled.div`
   background-color: var(--background-primary);
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 `
 
 
