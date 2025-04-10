@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import HoverAnchorLeave from '../components/containers/HoverAnchorLeave'
 import { useLocation } from 'react-router-dom'
+import MouseInteraction from '../components/global/MouseInteraction'
 
 const Activities = () => {
   const location = useLocation()
@@ -18,6 +19,7 @@ const Activities = () => {
 
   return (
     <BrowserSizedContainer>
+      <MouseInteraction/>
       <ActivityContainer>
         <HoverAnchorLeave id="Act1" />
         <ActivityPanel className={anchor === 'Act1' && 'active'} id="Act1" style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_1.jpg")' }}>

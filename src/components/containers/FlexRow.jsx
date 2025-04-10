@@ -7,6 +7,8 @@ export const FlexRow = styled.div`
     align-items: center;
     box-sizing: border-box;
     width: 100%;
+    position: relative;
+    flex: 1;
 `
 
 export default FlexRow
