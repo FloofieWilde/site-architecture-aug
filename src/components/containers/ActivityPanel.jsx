@@ -23,6 +23,9 @@ export const ActivityPanel = styled.div`
 
     .panelTitle {
       position: absolute;
+      font-size: 1.8rem;
+      background-color: var(--background-accent-bis);
+      padding: 10px 20px;
     }
 
     .panelContent {
