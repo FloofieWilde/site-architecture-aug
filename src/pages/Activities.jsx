@@ -4,12 +4,23 @@ import { ActivityPanel } from '../components/containers/ActivityPanel'
 import { ActivityContainer } from '../components/containers/ActivityContainer'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import HoverAnchorLeave from '../components/containers/HoverAnchorLeave'
+import { useLocation } from 'react-router-dom'
 
 const Activities = () => {
+  const location = useLocation()
+  const [anchor, setAnchor] = React.useState(null);
+
+  React.useEffect(() => {
+    const hash = location.hash.replace('#', '');
+    setAnchor(hash);
+  }, [location]);
+
   return (
     <BrowserSizedContainer>
       <ActivityContainer>
-        <ActivityPanel style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_1.jpg")' }}>
+        <HoverAnchorLeave id="Act1" />
+        <ActivityPanel className={anchor === 'Act1' && 'active'} id="Act1" style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_1.jpg")' }}>
           <h2 className='panelTitle'>Activité 1</h2>
           <div className="imageOverlay" />
           <div className='panelContent'>
@@ -20,7 +31,7 @@ const Activities = () => {
             <p>Dans cet article, nous vous partageons les résultats de cette expérience immersive : une série de regards croisés sur un espace urbain familier, qui devient soudain terrain d’émotions, de mémoires et de sensations. Bonne écoute, et surtout… ouvrez grand vos sens !</p>
           </div>
         </ActivityPanel>
-        <ActivityPanel style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_2.jpg")' }}>
+        <ActivityPanel className={anchor === 'Act2' && 'active'} id='Act2' style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_2.jpg")' }}>
           <h2 className='panelTitle'>Activité 2</h2>
           <div className="imageOverlay" />
           <div className='panelContent'>
@@ -30,7 +41,7 @@ const Activities = () => {
             <p>Cette démarche sensible et active a permis de stimuler l’observation, tout en révélant l’évolution du territoire à travers les traces du passé toujours visibles dans le tissu urbain présent. En arpentant la ville de manière ludique, les étudiants ont ainsi développé une nouvelle attention au paysage construit, apprenant à décrypter les signes de l’histoire du patrimoine grenoblois, souvent dissimulés dans les détails du quotidien.</p>
           </div>
         </ActivityPanel>
-        <ActivityPanel style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_3.jpg")' }}>
+        <ActivityPanel className={anchor === 'Act3' && 'active'} id='Act3' style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_3.jpg")' }}>
           <h2 className='panelTitle'>Activité 3</h2>
           <div className="imageOverlay" />
           <div className='panelContent'>

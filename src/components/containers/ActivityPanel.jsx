@@ -52,7 +52,7 @@ export const ActivityPanel = styled.div`
       scrollbar-arrow-color: white;
     }
 
-    &:hover {
+    &:hover, &:focus, &:focus-within, &.active {
       flex: 4;
       box-shadow: -15px 0px 20px rgba(0, 0, 0, 0.6), 15px 0px 20px rgba(0, 0, 0, 0.6);
       z-index: 1;
