@@ -11,7 +11,7 @@ const Navbar = () => {
           </NavLink>
         </LogoContainer>
         <NavRight className='nav right'>
-          <NavLinkStyled to="/context" activeClassName="active">
+          <NavLinkStyled to="context" activeClassName="active">
             <p>Contexte</p>
           </NavLinkStyled>
           <NavLinkStyled to='activities' activeClassName="active">
