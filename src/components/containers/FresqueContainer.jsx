@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const FresqueContainer = ({children}) => {
+const FresqueContainer = ({ children }) => {
   return (
     <FresqueContainerStyle>
-        {children}
+      {children}
     </FresqueContainerStyle>
   )
 }
