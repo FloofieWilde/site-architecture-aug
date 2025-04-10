@@ -48,7 +48,7 @@ export const ActivityPanel = styled.div`
       overflow-y: scroll;
 
       scrollbar-width: thin;
-      scrollbar-color: var(--background-accent-bis) rgba(0, 0, 0, 0.2);
+      scrollbar-color: var(--background-accent) rgba(0, 0, 0, 0.2);
       scrollbar-arrow-color: white;
     }
 

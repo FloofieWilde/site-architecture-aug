@@ -7,8 +7,11 @@ const Home = () => {
     <BrowserSizedContainer>
       <ImageContainer/>
       <TextContainer>
-        <h1>Analyse et Stratégie Paysagère</h1>
+        <h1 style={{background:'transparent'}}>&nbsp;</h1>
         <h3>Comment le paysage urbain peut-il faire cohabiter patrimoine, modernité et expression artistique ?</h3>
+      </TextContainer>
+      <TextContainer>
+        <h1>Analyse et Stratégie Paysagère</h1>
       </TextContainer>
       <TextBottom>
         <h3>Léa BADIER, Viktoriia BOIKO, 
@@ -36,7 +39,7 @@ const ImageContainer = styled.div`
 `
 
 const TextContainer = styled.div`
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   color: var(--content-primary);
   overflow: hidden;
@@ -46,6 +49,13 @@ const TextContainer = styled.div`
   max-width: calc(100% - 140px);
   max-height: calc(100% - 60px);
   font-size: 1.2rem;
+
+  h1, h3 {
+    background-color: var(--background-accent-bis);
+    color: var(--content-primary-reverse);
+    padding: 10px 20px;
+    opacity: 0.6;
+  }
 `
 
 const TextBottom = styled.div`
@@ -58,6 +68,12 @@ const TextBottom = styled.div`
   bottom: 60px;
   max-width: calc(100% - 140px);
   max-height: calc(100% - 60px);
+  h3 {
+    background-color: var(--background-accent-bis);
+    color: var(--content-primary-reverse);
+    padding: 10px 20px;
+    opacity: 0.6;
+  }
 `
 
 export default Home
