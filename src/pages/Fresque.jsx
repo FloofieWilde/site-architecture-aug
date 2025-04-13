@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import FlexRow from '../components/containers/FlexRow'
-import BrowserSizedContainer from '../components/containers/BrowserSizedContainer'
 import { TextContainer } from '../components/containers/TextContainer'
 import MouseInteraction from '../components/global/MouseInteraction'
 

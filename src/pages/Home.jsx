@@ -7,7 +7,7 @@ const Home = () => {
     <BrowserSizedContainer>
       <ImageContainer/>
       <TextContainer>
-        <h1 style={{background:'transparent'}}>&nbsp;</h1>
+        <h1 style={{background:'transparent', color:'transparent'}}>Analyse et Stratégie Paysagère</h1>
         <h3>Comment le paysage urbain peut-il faire cohabiter patrimoine, modernité et expression artistique ?</h3>
       </TextContainer>
       <TextContainer>

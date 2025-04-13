@@ -1,7 +1,6 @@
 import React from 'react'
 import BrowserSizedContainer from '../components/containers/BrowserSizedContainer'
 import { TextContainer } from '../components/containers/TextContainer'
-import FlexColumn from '../components/containers/FlexColumn'
 import FlexRow from '../components/containers/FlexRow'
 import styled from 'styled-components'
 import MouseInteraction from '../components/global/MouseInteraction'
@@ -24,6 +23,7 @@ const Context = () => {
       <MouseInteraction/>
       <iframe 
             src="https://framacarte.org/fr/map/itinetaire-de-la-sortie_206628#15/45.1899/5.7275"
+            title="Carte de la sortie"
             style={{
                 height: '100%',
                 width: '100%',

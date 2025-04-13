@@ -20,6 +20,9 @@ const Navbar = () => {
           <NavLinkStyled to='fresque' activeClassName="active">
             <p>Fresque</p>
           </NavLinkStyled>
+          <NavLinkStyled to='thanks' activeClassName="active">
+            <p>Remerciements</p>
+          </NavLinkStyled>
         </NavRight>
     </Nav>
   )

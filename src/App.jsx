@@ -5,6 +5,7 @@ import Fresque from './pages/Fresque'
 import BrowserSizedContainer from './components/containers/BrowserSizedContainer'
 import Activities from './pages/Activities'
 import Context from './pages/Context'
+import Thanks from './pages/Thanks'
 
 function App () {
   return (
@@ -16,6 +17,7 @@ function App () {
           <Route path="/context" element={<Context /> } />
           <Route path="/activities" element={<Activities/> } />
           <Route path="/fresque" element={<Fresque/> } />
+          <Route path="/thanks" element={ <Thanks/> } />
         </Routes>
       </BrowserSizedContainer>
     </BrowserRouter>
