@@ -57,6 +57,7 @@ const Activities = () => {
             <p>La présence prédominante de certaines émotions révélées par le diagnostic sensible et émotionnel permet de démontrer que, bien que nos perceptions et émotions varient d’un individu à l’autre, nous partageons des mécanismes perceptifs, émotionnels, cognitifs similaires. Ces similarités peuvent alors conduire à des expériences urbaines communes d’un individu à l’autre. Parmi les effets largement partagés figurent l’impact bienfaisant de la nature : lorsque nous sommes exposés à des éléments naturels (végétation, eau, etc.). Également, l’architecture monumentale peut susciter admiration et oppression, ou encore un même espace peut provoquer des émotions opposées, existantes (ex. beauté d’un bâtiment ou oppression de l’espace).</p>
           </div>
         </ActivityPanel>
+        <HoverAnchorLeave id="Act2" />
         <ActivityPanel className={anchor === 'Act2' && 'active'} id='Act2' style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_2.jpg")' }}>
           <h2 className='panelTitle'>Expérimentation 2</h2>
           <div className="imageOverlay" />
@@ -68,6 +69,7 @@ const Activities = () => {
             <p>Cette démarche sensible et active a permis de stimuler l’observation, tout en révélant l’évolution du territoire à travers les traces du passé toujours visibles dans le tissu urbain présent. En arpentant la ville de manière ludique, les étudiants ont ainsi développé une nouvelle attention au paysage construit, apprenant à décrypter les signes de l’histoire du patrimoine grenoblois, souvent dissimulés dans les détails du quotidien.</p>
           </div>
         </ActivityPanel>
+        <HoverAnchorLeave id="Act3" />
         <ActivityPanel className={anchor === 'Act3' && 'active'} id='Act3' style={{ backgroundImage: 'url("./imgs/ImagesPanneaux/Panneau_activité_3.jpg")' }}>
           <h2 className='panelTitle'>Expérimentation 3</h2>
           <div className="imageOverlay" />
